@@ -1,6 +1,6 @@
 import { Window } from "happy-dom";
 
-export function getURLsFromHTML(htmlBody: any, baseURL: any): string[] {
+export function getURLsFromHTML(htmlBody: string, baseURL: string): string[] {
   const urls: string[] = [];
   const window = new Window();
   const document = window.document;
