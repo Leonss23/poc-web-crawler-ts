@@ -7,7 +7,7 @@ Note: I limited it to finding 25 links, look for the `const limit` symbol to cha
 
 ## Why
 
-- Learned fundamentals of unit testing with a [Jest](https://jestjs.io/)-like testing library ([Vitest](https://vitest.dev/))
+- Learned fundamentals of unit testing with a [Jest](https://jestjs.io/)-like testing library ([Vitest](https://vitest.dev/) and [Bun](https://bun.sh/docs/cli/test)'s test runner)
 - Got a bit more familiar with the [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) Class/API
 
 ## How to run
@@ -30,3 +30,5 @@ npm run dev SITE_URL
 
 # e.g. `npm start https://leonardo-gatti.pages.dev`
 ```
+
+### Check the `bun` branch too
