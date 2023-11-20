@@ -3,7 +3,7 @@
 > **Crawls a given website (HTML), retrieves links in `<a>` tags,
 > then recursively crawls found links too, and finally outputs all found URLs**
 
-Note: I limited it to finding 25 links, look for the `const limit` symbol to change it.
+Note: I limited it to finding 25 links, look for the `const limit` symbol in `index.ts` to change it.
 
 ## Why
 
