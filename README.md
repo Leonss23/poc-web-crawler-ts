@@ -28,5 +28,5 @@ npm start SITE_URL
 # Run app on watch mode
 npm run dev SITE_URL
 
-# e.g. `npm start leonardo-gatti.pages.dev`
+# e.g. `npm start https://leonardo-gatti.pages.dev`
 ```
