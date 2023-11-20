@@ -15,7 +15,7 @@ async function main() {
   const limit = 25;
 
   for (const url of urls) {
-    if (visitedURLs.size >= limit) break;
+    if (visitedURLs.size > limit) break;
     const visited = visitedURLs.has(url.toString());
     if (visited) continue;
 
@@ -33,6 +33,7 @@ async function main() {
   for (const url of visitedURLs) {
     normalizedURLs.add(normalizeURL(url));
   }
+
   console.log({ normalizedURLs });
 }
 
