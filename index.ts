@@ -1,4 +1,4 @@
-import { crawlSite, normalizeURL } from "./crawl";
+import { crawlSite, normalizeURL } from "./src/crawl";
 
 async function main() {
   if (process.argv.length < 3) {
