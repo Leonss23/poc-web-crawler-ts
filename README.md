@@ -31,4 +31,21 @@ npm run dev SITE_URL
 # e.g. `npm start https://leonardo-gatti.pages.dev`
 ```
 
-### Check the `bun` branch too
+### With [bun](https://bun.sh/docs)
+
+```bash
+# Install dependencies
+bun i
+
+# Run tests
+bun test
+
+# To run the app pass a website's URL as an argument
+# Run app
+bun index.ts SITE_URL
+
+# Run app on watch mode
+bun --watch index.ts SITE_URL
+
+# e.g. `bun index.ts https://leonardo-gatti.pages.dev`
+```
