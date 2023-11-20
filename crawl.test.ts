@@ -13,10 +13,10 @@ describe("getURLsFromHTML", () => {
     </body>
   <html>
         `,
-      baseURL: `https://leonardo-gatti.pages.dev`,
+      baseURL: new URL(`https://leonardo-gatti.pages.dev`),
     };
     const actual = getURLsFromHTML(input.htmlBody, input.baseURL);
-    const expected = ["https://leonardo-gatti.pages.dev/"];
+    const expected = [new URL("https://leonardo-gatti.pages.dev/")];
     expect(actual).toEqual(expected);
   });
 
@@ -31,10 +31,10 @@ describe("getURLsFromHTML", () => {
     </body>
   <html>
         `,
-      baseURL: `https://leonardo-gatti.pages.dev`,
+      baseURL: new URL(`https://leonardo-gatti.pages.dev`),
     };
     const actual = getURLsFromHTML(input.htmlBody, input.baseURL);
-    const expected = ["https://leonardo-gatti.pages.dev/resume.pdf"];
+    const expected = [new URL("https://leonardo-gatti.pages.dev/resume.pdf")];
     expect(actual).toEqual(expected);
   });
 
@@ -62,15 +62,15 @@ describe("getURLsFromHTML", () => {
   </body>
 <html>
       `,
-      baseURL: `https://leonardo-gatti.pages.dev`,
+      baseURL: new URL(`https://leonardo-gatti.pages.dev`),
     };
     const actual = getURLsFromHTML(input.htmlBody, input.baseURL);
     const expected = [
-      "https://leonardo-gatti.pages.dev/#hero",
-      "https://leonardo-gatti.pages.dev/resume.pdf",
-      "https://leonardo-gatti.pages.dev/resume.pdf",
-      "https://leonardo-gatti.pages.dev/",
-      "https://google.com/",
+      new URL("https://leonardo-gatti.pages.dev/#hero"),
+      new URL("https://leonardo-gatti.pages.dev/resume.pdf"),
+      new URL("https://leonardo-gatti.pages.dev/resume.pdf"),
+      new URL("https://leonardo-gatti.pages.dev/"),
+      new URL("https://google.com/"),
     ];
     expect(actual).toEqual(expected);
   });
