@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
-  "packageManager": "pnpm@8.10.5",
   "scripts": {
     "start": "tsc && node dest/index.js",
     "dev": "nodemon --",
